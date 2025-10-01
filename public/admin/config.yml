@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: torresgomezedgar/blog-decap
   branch: main  # rama donde se guardarán los posts
 
 media_folder: "public/images/uploads"  # dónde se suben imágenes
