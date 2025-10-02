@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: torresgomezedgar/blog-decap 
+  branch: main  # rama donde se guardarán los posts
+  auth_type: token
+  token: ${GITHUB_TOKEN}
+  #name: proxy
+  #proxy_url: http://localhost:8081/api/v1
+
+media_folder: "public/images/uploads"  # dónde se suben imágenes
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
