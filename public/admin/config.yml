@@ -5,7 +5,6 @@ backend:
   auth_type: token
   token: ${GITHUB_TOKEN}
   # El token se debe inyectar como variable de entorno, no escribirlo aquí directamente
-
   #site_url: https://blog-decap.vercel.app
   #display_url: https://blog-decap.vercel.app
 
