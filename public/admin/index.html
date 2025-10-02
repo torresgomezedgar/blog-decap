@@ -9,5 +9,45 @@
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     
+    <script>
+    // Inicialización explícita
+    CMS.registerBackend('github', GitHubBackend);
+    
+    // Configuración inline como fallback
+    const config = {
+      backend: {
+        name: "github",
+        repo: "torresgomezedgar/blog-decap", 
+        branch: "main",
+        auth_type: "token"
+      },
+      locale: 'es',
+      media_folder: "public/images/uploads",
+      public_folder: "/images/uploads",
+      collections: [
+        {
+          name: "posts",
+          label: "Blog Posts",
+          folder: "src/content/posts",
+          create: true,
+          slug: "{{slug}}",
+          fields: [
+            { label: "Título", name: "title", widget: "string" },
+            { label: "Fecha", name: "date", widget: "datetime" },
+            { label: "Imagen", name: "image", widget: "image" },
+            { 
+              label: "Etiquetas", 
+              name: "tags", 
+              widget: "list",
+              field: { label: "Etiqueta", name: "tag", widget: "string" }
+            },
+            { label: "Contenido", name: "body", widget: "markdown" }
+          ]
+        }
+      ]
+    };
+    
+    CMS.init({ config });
+  </script>
   </body>
 </html>

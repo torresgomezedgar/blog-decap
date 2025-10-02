@@ -2,8 +2,12 @@ backend:
   name: github
   repo: torresgomezedgar/blog-decap
   branch: main
-  auth_type: token
- 
+  auth_type: implicit
+  token: ${GITHUB_TOKEN}
+  # El token se debe inyectar como variable de entorno, no escribirlo aquí directamente
+  site_url: https://blog-decap.vercel.app
+  display_url: https://blog-decap.vercel.app
+  locale: "es"
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
