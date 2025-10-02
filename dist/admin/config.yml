@@ -6,9 +6,8 @@ backend:
   # El token se debe inyectar como variable de entorno, no escribirlo aquí directamente
   token: ${GITHUB_TOKEN}
 
-  site_url: https://blog-decap.vercel.app
-  display_url: https://blog-decap.vercel.app
-  logo_url: https://blog-decap.vercel.app/logo.png
+  #site_url: https://blog-decap.vercel.app
+  #display_url: https://blog-decap.vercel.app
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
