@@ -4,7 +4,7 @@ window.CMS_CONFIG = {
     repo: "torresgomezedgar/blog-decap",
     branch: "main",
     auth_type: "token",
-    token: process.env.GITHUB_TOKEN, // 🚀 Vercel lo reemplaza
+    token: "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", // 🚀 Vercel lo reemplaza
   },
   media_folder: "public/images/uploads",
   public_folder: "/images/uploads",
