@@ -5,6 +5,9 @@ backend:
   base_url: https://etgblog.onrender.com
   auth_type: token
   token: ${GITHUB_TOKEN}
+  
+  #name: proxy
+  #proxy_url: http://localhost:8081/api/v1
 
 media_folder: "public/images/uploads"  # dónde se suben imágenes
 public_folder: "/images/uploads"
