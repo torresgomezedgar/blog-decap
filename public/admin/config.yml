@@ -3,7 +3,8 @@ backend:
   repo: torresgomezedgar/blog-decap
   branch: main  # rama donde se guardarán los posts
   base_url: https://etgblog.onrender.com
-  auth_endpoint: auth
+  auth_type: token
+  token: ${GITHUB_TOKEN}
 
 media_folder: "public/images/uploads"  # dónde se suben imágenes
 public_folder: "/images/uploads"
