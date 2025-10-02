@@ -2,9 +2,10 @@ backend:
   name: github
   repo: torresgomezedgar/blog-decap
   branch: main
-  auth_type: implicit
-  token: ${GITHUB_TOKEN}
-  # El token se debe inyectar como variable de entorno, no escribirlo aquí directamente
+  auth_type: oauth
+  base_url: https://blog-auth-c82h.onrender.com
+  auth_endpoint: /auth
+  app_id: Ov23lieB8tMXJlRAsDPA
   site_url: https://blog-decap.vercel.app
   display_url: https://blog-decap.vercel.app
   locale: "es"
