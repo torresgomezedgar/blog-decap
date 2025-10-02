@@ -1,8 +1,7 @@
 backend:
   name: github
-  repo: torresgomezedgar/blog-decap
+  repo: torresgomezedgar/blog-decap 
   branch: main  # rama donde se guardarán los posts
-  base_url: https://etgblog.onrender.com
   auth_type: token
   token: ${GITHUB_TOKEN}
   
