@@ -4,7 +4,6 @@ backend:
   branch: main  # rama donde se guardarán los posts
   auth_type: token
   token: ${GITHUB_TOKEN}
-  
   #name: proxy
   #proxy_url: http://localhost:8081/api/v1
 
